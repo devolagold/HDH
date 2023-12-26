@@ -10,12 +10,16 @@
 
 body::-webkit-scrollbar{
     width: .5rem;
-  }
+}
   
-  body::-webkit-scrollbar-track{
+body::-webkit-scrollbar-track{
     background: #000;
-  }
+}
   
-  body::-webkit-scrollbar-thumb{
+body::-webkit-scrollbar-thumb{
     background: #ECBD0B;
-  }
+}
+
+.background-blur{
+    background-color: #ECBD0B;
+}
