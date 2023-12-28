@@ -6,6 +6,7 @@
 
 *{
     font-family: "Onest";
+    scroll-behavior: smooth;
 }
 
 body::-webkit-scrollbar{
