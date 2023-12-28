@@ -23,3 +23,16 @@ body::-webkit-scrollbar-thumb{
 .background-blur{
     background-color: #ECBD0B;
 }
+
+.bento-grid-bg-1{
+    background-color: #ECBD0B;
+    /* background: url(src/assets/bento-card-bg-1.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover; */
+}
+
+.bento-grid-bg-2{
+    background-color: #000;
+    /* background-image: url(assets/bento-card-bg-2.jpg); */
+}
