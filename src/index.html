@@ -15,7 +15,7 @@
           <div class="relative my-1 flex items-center justify-between mx-0 dark:bg-[#060606DB]">
             <div class="w-60 max-w-full px-4">
               <a href="#" class="block w-full py-5">
-                <img src="/src/assets/Logo.png" alt="logo" class="w-ull" width="70%"/>
+                <img src="/src/assets/Logo.svg" alt="logo" class="w-ull" width="70%"/>
               </a>
             </div>
             <div class="flex w-full items-center justify-between px-4">
@@ -175,7 +175,6 @@
                 <h1 class="reveal-type text-[18px] font-semibold dark:text-white">Networking</h1>
                 <p class="text-sm text-[#565564] dark:text-[#C1C1C1]">Forge valuable connections and expand your professional network with our tailored co-working space.</p>
             </div>
-            
         </div>
     </section>
 
@@ -208,16 +207,54 @@
     </div>
 
     <!-- Bento Grid Section -->
-    <!-- <div class="m-6 md:m-16">
+    <div class="m-6 md:m-16 md:px-16">
         <div class="flex flex-col md:grid md:grid-cols-3 gap-4">
-            <div class="bento-grid-bg-1 p-6 md:p-12 py-10 md:py-16 flex items-center justify-center bg[#ECBD0B] text-white">
+            <div class="bento-grid-bg-1 p-6 md:p-10 py-10 md:py-16 flex items-center justify-center bg[#ECBD0B] text-white">
                 <h1 class="font-semibold text-4xl">Want to take your business to new heights?</h1>
             </div>
-            <div class="col-span-2 bento-grid-bg-2 p-12 py-16 flex items-left justify-left bg-[#000] text-white">
-                <h1 class="font-semibold text-4xl text-[#ECBD0B]">Elevate your <br> business <br> success</h1>
+            <div class="col-span-2 bento-grid-bg-2 p-6 md:p-12 py-10 flex items-center justify-left bg-[#0D0D0D] text-white">
+                <div class="flex flex-col space-y-4 md:items-center md:flex-row md:space-x-6 md:space-y-0">
+                    <div class="md:w-1/2 flex flex-col space-y-3">
+                        <h1 class="font-semibold text-4xl text-[#ECBD0B]">Elevate your <br class="hidden md:block"> business success</h1>
+                        <p>Keep up to date with our <br class="hidden md:block"> innovative solutions.</p>
+                    </div>
+                    <div class="md:w-1/2 img-container">
+                        <img src="assets/elevate-image.png" alt="image" width="50%" class="-mb-10 ml-6 md:-mb-12 md:ml-12 w-fit">
+                    </div>
+                </div>
             </div>
         </div>
-    </div> -->
+
+        <div class="mt-4 flex flex-col md:grid md:grid-cols-2 gap-4">
+            <div class="flex flex-col space-y-4 justify-between bg-[#0D0D0D] md:space-y-8">
+                <h1 class="text-center m-4 mb-0 mt-6 md:mt-12 font-semibold text-2xl md:text-4xl text-white">Branding solutions that leaves lasting impressions</h1>
+                <img src="assets/branding-solution.png" alt="">
+            </div>
+            <div class="flex flex-col space-y-4 justify-between bg-[#0D0D0D] md:space-y-8">
+                <h1 class="text-center m-4 mb-0 mt-6 md:mt-12 font-semibold text-2xl md:text-4xl text-white">The perfect workspace for you and your team.</h1>
+                <img src="assets/perfect-workspace.png" alt="">
+            </div>
+        </div>
+
+        <div class="mt-4 p-8 md:p-24 text-center flex flex-col bg-[#0D0D0D]">
+            <div class="flex flex-col space-y-4 items-center justify-center">
+                <h1 class="font-bold text-3xl md:text-7xl text-[#ECBD0B]">Start a Project now!</h1>
+                <a href="#" class="w-fit bg-[#ECBD0B] text-[#0D0D0D] font-medium rounded-full flex items-center space-x-2 py-3 px-6 hover:bg-opacity-90">
+                    <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <g clip-path="url(#clip0_536_9245)">
+                    <path d="M15 3H3C2.175 3 1.5075 3.675 1.5075 4.5L1.5 13.5C1.5 14.325 2.175 15 3 15H15C15.825 15 16.5 14.325 16.5 13.5V4.5C16.5 3.675 15.825 3 15 3ZM15 6L9 9.75L3 6V4.5L9 8.25L15 4.5V6Z" fill="black"/>
+                    </g>
+                    <defs>
+                        <clipPath id="clip0_536_9245">
+                            <rect width="18" height="18" fill="white"/>
+                        </clipPath>
+                    </defs>
+                    </svg>                    
+                    <p>honips0907@gmail.com</p>
+                </a>
+            </div>
+        </div>
+    </div>
 
     <!-- What we Offer -->
     <section id="services" class="m-4 md:m-16">
@@ -517,7 +554,7 @@
     <!-- Footer -->
     <section class="pb-24 bg-[#FFFEF7] text-center text-[#00000] dark:bg-[#010001] dark:text-[#C1C1C1]">
         <div class="flex flex-col items-center justify-center">
-            <img src="/src/assets/Logo.png" class="w-2/4 md:w-1/4">
+            <img src="/src/assets/Logo.svg" class="w-2/4 md:w-1/4">
 
             <div class="links mt-12 mb-6 flex flex-col items-center justify-center space-y-3 md:space-y-0 md:space-x-6 font-medium md:flex-row">
                 <div class="flex space-x-3 text-center">
@@ -596,20 +633,6 @@
                 stagger: 0.1
             })
         })
-
-        // const lenis = new Lenis()
-
-        // lenis.on('scroll', (e) => {
-        // console.log(e)
-        // })
-
-        // function raf(time) {
-        // lenis.raf(time)
-        // requestAnimationFrame(raf)
-        // }
-
-        // requestAnimationFrame(raf)
-
     </script>
 </body>
 </html>

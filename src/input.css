@@ -34,7 +34,7 @@ body::-webkit-scrollbar-thumb{
 }
 
 .bento-grid-bg-2{
-    background-color: #000;
+    /* background-color: #000; */
     /* background-image: url(assets/bento-card-bg-2.jpg); */
 }
 
@@ -61,5 +61,9 @@ body::-webkit-scrollbar-thumb{
 
 .testimonial-border-black{
     border: 1px solid #ECBD0B1F;
-    border-bottom: 12px solid #000;
+    border-bottom: 12px solid #121212;
+}
+
+.elevate-bg{
+    background-image: url(assets/elevate-card-bg.jpg);
 }
