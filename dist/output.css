@@ -672,6 +672,10 @@ video {
   margin-bottom: -2.5rem;
 }
 
+.mb-0{
+  margin-bottom: 0px;
+}
+
 .mb-10{
   margin-bottom: 2.5rem;
 }
@@ -706,10 +710,6 @@ video {
 
 .mt-8{
   margin-top: 2rem;
-}
-
-.mb-0{
-  margin-bottom: 0px;
 }
 
 .block{
@@ -952,14 +952,6 @@ video {
   padding: 1.5rem;
 }
 
-.p-24{
-  padding: 6rem;
-}
-
-.p-12{
-  padding: 3rem;
-}
-
 .p-8{
   padding: 2rem;
 }
@@ -1027,12 +1019,21 @@ video {
   padding-right: 4rem;
 }
 
+.pt-12{
+  padding-top: 3rem;
+}
+
 .text-left{
   text-align: left;
 }
 
 .text-center{
   text-align: center;
+}
+
+.text-2xl{
+  font-size: 1.5rem;
+  line-height: 2rem;
 }
 
 .text-3xl{
@@ -1057,16 +1058,6 @@ video {
 .text-sm{
   font-size: 0.875rem;
   line-height: 1.25rem;
-}
-
-.text-2xl{
-  font-size: 1.5rem;
-  line-height: 2rem;
-}
-
-.text-7xl{
-  font-size: 4.5rem;
-  line-height: 1;
 }
 
 .font-bold{
@@ -1098,6 +1089,11 @@ video {
   color: #00000;
 }
 
+.text-\[\#0D0D0D\]{
+  --tw-text-opacity: 1;
+  color: rgb(13 13 13 / var(--tw-text-opacity));
+}
+
 .text-\[\#565564\]{
   --tw-text-opacity: 1;
   color: rgb(86 85 100 / var(--tw-text-opacity));
@@ -1121,11 +1117,6 @@ video {
 .text-white{
   --tw-text-opacity: 1;
   color: rgb(255 255 255 / var(--tw-text-opacity));
-}
-
-.text-\[\#0D0D0D\]{
-  --tw-text-opacity: 1;
-  color: rgb(13 13 13 / var(--tw-text-opacity));
 }
 
 .ring-\[\#06255C\]{
@@ -1216,8 +1207,8 @@ body::-webkit-scrollbar-thumb{
   border-bottom: 12px solid #121212;
 }
 
-.elevate-bg{
-  background-image: url(assets/elevate-card-bg.jpg);
+#animatedText span {
+  transition: color .5s, font-weight .5s;
 }
 
 .hover\:bg-gray-100:hover{
@@ -1322,10 +1313,6 @@ body::-webkit-scrollbar-thumb{
     align-items: center;
   }
 
-  .md\:justify-between{
-    justify-content: space-between;
-  }
-
   .md\:gap-4{
     gap: 1rem;
   }
@@ -1380,17 +1367,22 @@ body::-webkit-scrollbar-thumb{
     padding: 3rem;
   }
 
-  .md\:p-8{
-    padding: 2rem;
-  }
-
   .md\:p-24{
     padding: 6rem;
+  }
+
+  .md\:p-8{
+    padding: 2rem;
   }
 
   .md\:px-16{
     padding-left: 4rem;
     padding-right: 4rem;
+  }
+
+  .md\:py-12{
+    padding-top: 3rem;
+    padding-bottom: 3rem;
   }
 
   .md\:py-16{
@@ -1401,6 +1393,10 @@ body::-webkit-scrollbar-thumb{
   .md\:py-24{
     padding-top: 6rem;
     padding-bottom: 6rem;
+  }
+
+  .md\:pt-14{
+    padding-top: 3.5rem;
   }
 
   .md\:text-left{
@@ -1495,6 +1491,10 @@ body::-webkit-scrollbar-thumb{
   background-color: rgb(6 6 6 / var(--tw-bg-opacity));
 }
 
+:is(:where(.dark) .dark\:bg-\[\#060606ef\]){
+  background-color: #060606ef;
+}
+
 :is(:where(.dark) .dark\:bg-white){
   --tw-bg-opacity: 1;
   background-color: rgb(255 255 255 / var(--tw-bg-opacity));
@@ -1526,12 +1526,6 @@ body::-webkit-scrollbar-thumb{
 :is(:where(.dark) .dark\:text-white){
   --tw-text-opacity: 1;
   color: rgb(255 255 255 / var(--tw-text-opacity));
-}
-
-:is(:where(.dark) .dark\:backdrop-blur-xl){
-  --tw-backdrop-blur: blur(24px);
-  -webkit-backdrop-filter: var(--tw-backdrop-blur) var(--tw-backdrop-brightness) var(--tw-backdrop-contrast) var(--tw-backdrop-grayscale) var(--tw-backdrop-hue-rotate) var(--tw-backdrop-invert) var(--tw-backdrop-opacity) var(--tw-backdrop-saturate) var(--tw-backdrop-sepia);
-          backdrop-filter: var(--tw-backdrop-blur) var(--tw-backdrop-brightness) var(--tw-backdrop-contrast) var(--tw-backdrop-grayscale) var(--tw-backdrop-hue-rotate) var(--tw-backdrop-invert) var(--tw-backdrop-opacity) var(--tw-backdrop-saturate) var(--tw-backdrop-sepia);
 }
 
 :is(:where(.dark) .dark\:hover\:bg-gray-500:hover){

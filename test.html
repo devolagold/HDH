@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Text Animation</title>
+    <style>
+        #animatedText span {
+            transition: color 1s, font-weight 1s;
+        }
+    </style>
+</head>
+<body>
+
+<h1 id="animatedText">
+    Accelerate your 
+    <span id="tech">tech</span>, 
+    <span id="social">social</span>, 
+    <span id="business">business idea</span> with us.
+</h1>
+
+<script>
+    setTimeout(() => {
+        applyStyles("tech");
+
+        setTimeout(() => {
+            applyStyles("social");
+
+            setTimeout(() => {
+                applyStyles("business");
+            }, 3000);
+        }, 3000);
+    }, 3000);
+
+    function applyStyles(elementId) {
+        const element = document.getElementById(elementId);
+
+        // Reset styles for the previous text
+        const previousElement = document.querySelector('#animatedText span[style]');
+        if (previousElement) {
+            previousElement.removeAttribute('style');
+        }
+
+        // Apply styles to the current text
+        element.style.color = "#ECBD0B";
+        element.style.fontWeight = "bold";
+    }
+</script>
+
+</body>
+</html>

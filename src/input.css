@@ -64,6 +64,6 @@ body::-webkit-scrollbar-thumb{
     border-bottom: 12px solid #121212;
 }
 
-.elevate-bg{
-    background-image: url(assets/elevate-card-bg.jpg);
+#animatedText span {
+    transition: color .5s, font-weight .5s;
 }
