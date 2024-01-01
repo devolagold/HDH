@@ -37,3 +37,29 @@ body::-webkit-scrollbar-thumb{
     background-color: #000;
     /* background-image: url(assets/bento-card-bg-2.jpg); */
 }
+
+@keyframes fade-up {
+    0%{
+        opacity: 0;
+        transform: translateY(30px) scale(0.9);
+    }
+
+    100%{
+        opacity: 1;
+        transform: translateY(0px) scale(1);
+    }   
+}
+
+.intro{
+    animation: fade-up 2s;
+}
+
+.testimonial-border{
+    border: 1px solid #ECBD0B1F;
+    border-bottom: 12px solid #ECBD0B;
+}
+
+.testimonial-border-black{
+    border: 1px solid #ECBD0B1F;
+    border-bottom: 12px solid #000;
+}
