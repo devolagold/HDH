@@ -1011,6 +1011,11 @@ video {
   padding-bottom: 6px;
 }
 
+.px-5{
+  padding-left: 1.25rem;
+  padding-right: 1.25rem;
+}
+
 .pb-24{
   padding-bottom: 6rem;
 }
@@ -1058,6 +1063,15 @@ video {
 .text-sm{
   font-size: 0.875rem;
   line-height: 1.25rem;
+}
+
+.text-xs{
+  font-size: 0.75rem;
+  line-height: 1rem;
+}
+
+.text-\[24px\]{
+  font-size: 24px;
 }
 
 .font-bold{
@@ -1394,6 +1408,16 @@ body::-webkit-scrollbar-thumb{
   .md\:py-24{
     padding-top: 6rem;
     padding-bottom: 6rem;
+  }
+
+  .md\:px-7{
+    padding-left: 1.75rem;
+    padding-right: 1.75rem;
+  }
+
+  .md\:py-3{
+    padding-top: 0.75rem;
+    padding-bottom: 0.75rem;
   }
 
   .md\:pt-14{
