@@ -49,7 +49,19 @@ body::-webkit-scrollbar-thumb{
     background: url(../src/assets/bento-card-bg-co-4.jpg);
 }
 
-.bento-grid-bg-1, .bento-grid-bg-2, .bento-grid-bg-co-1, .bento-grid-bg-co-2, .bento-grid-bg-co-3, .bento-grid-bg-co-4{
+.bento-idea{
+    background: url(../src/assets/bento-card-idea.png);
+}
+
+.bento-desk{
+    background: url(../src/assets/bento-card-desk.png);
+}
+
+.bento-network{
+    background: url(../src/assets/bento-card-member.png);
+}
+
+.bento-grid-bg-1, .bento-grid-bg-2, .bento-grid-bg-co-1, .bento-grid-bg-co-2, .bento-grid-bg-co-3, .bento-grid-bg-co-4, .bento-idea, .bento-desk, .bento-network{
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
