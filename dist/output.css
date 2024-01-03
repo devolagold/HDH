@@ -1403,6 +1403,10 @@ body::-webkit-scrollbar-thumb{
     margin-top: 1.5rem;
   }
 
+  .md\:mt-1{
+    margin-top: 0.25rem;
+  }
+
   .md\:block{
     display: block;
   }
