@@ -879,12 +879,6 @@ video {
   margin-left: calc(0.75rem * calc(1 - var(--tw-space-x-reverse)));
 }
 
-.space-x-4 > :not([hidden]) ~ :not([hidden]){
-  --tw-space-x-reverse: 0;
-  margin-right: calc(1rem * var(--tw-space-x-reverse));
-  margin-left: calc(1rem * calc(1 - var(--tw-space-x-reverse)));
-}
-
 .space-x-8 > :not([hidden]) ~ :not([hidden]){
   --tw-space-x-reverse: 0;
   margin-right: calc(2rem * var(--tw-space-x-reverse));
@@ -975,10 +969,6 @@ video {
 .bg-white{
   --tw-bg-opacity: 1;
   background-color: rgb(255 255 255 / var(--tw-bg-opacity));
-}
-
-.bg-\[\#\]{
-  background-color: #;
 }
 
 .fill-black{
@@ -1401,16 +1391,6 @@ body::-webkit-scrollbar-thumb{
     margin-bottom: 3rem;
   }
 
-  .md\:mx-20{
-    margin-left: 5rem;
-    margin-right: 5rem;
-  }
-
-  .md\:mx-16{
-    margin-left: 4rem;
-    margin-right: 4rem;
-  }
-
   .md\:-mb-12{
     margin-bottom: -3rem;
   }
@@ -1449,6 +1429,10 @@ body::-webkit-scrollbar-thumb{
 
   .md\:mt-6{
     margin-top: 1.5rem;
+  }
+
+  .md\:mt-4{
+    margin-top: 1rem;
   }
 
   .md\:block{
@@ -1497,6 +1481,14 @@ body::-webkit-scrollbar-thumb{
 
   .md\:gap-4{
     gap: 1rem;
+  }
+
+  .md\:gap-8{
+    gap: 2rem;
+  }
+
+  .md\:gap-6{
+    gap: 1.5rem;
   }
 
   .md\:space-x-12 > :not([hidden]) ~ :not([hidden]){
@@ -1572,6 +1564,11 @@ body::-webkit-scrollbar-thumb{
     padding-right: 4rem;
   }
 
+  .md\:px-20{
+    padding-left: 5rem;
+    padding-right: 5rem;
+  }
+
   .md\:px-7{
     padding-left: 1.75rem;
     padding-right: 1.75rem;
@@ -1595,11 +1592,6 @@ body::-webkit-scrollbar-thumb{
   .md\:py-3{
     padding-top: 0.75rem;
     padding-bottom: 0.75rem;
-  }
-
-  .md\:px-20{
-    padding-left: 5rem;
-    padding-right: 5rem;
   }
 
   .md\:pt-14{
