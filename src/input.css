@@ -5,7 +5,7 @@
 @tailwind utilities;
 
 *{
-    font-family: "Onest";
+    font-family: "Onest", Inter;
     scroll-behavior: smooth;
 }
 
