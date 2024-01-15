@@ -7,82 +7,6 @@
     <title>Honips Digital Hub</title>
     <link href="/dist/output.css" rel="stylesheet">
     <script defer src="/src/js/main.js"></script>
-    <style>
-        :root {
-            --modal-duration: 1s;
-            --modal-color: #ECBD0B;
-        }
-
-        .modal {
-        display: none;
-        position: fixed;
-        z-index: 1;
-        left: 0;
-        top: 0;
-        height: 100%;
-        width: 100%;
-        overflow: auto;
-        background-color: rgba(0, 0, 0, 0.5);
-        }
-
-        .modal-content {
-        margin: 10% auto;
-        width: 60%;
-        box-shadow: 0 5px 8px 0 rgba(0, 0, 0, 0.2), 0 7px 20px 0 rgba(0, 0, 0, 0.17);
-        animation-name: modalopen;
-        animation-duration: var(--modal-duration);
-        }
-
-        .modal-header h2,
-        .modal-footer h3 {
-        margin: 0;
-        }
-
-        .modal-header {
-        background: var(--modal-color);
-        padding: 15px;
-        color: #fff;
-        border-top-left-radius: 5px;
-        border-top-right-radius: 5px;
-        }
-
-        .modal-body {
-        padding: 10px 20px;
-        background: #fff;
-        }
-
-        .modal-footer {
-        background: var(--modal-color);
-        padding: 10px;
-        color: #fff;
-        text-align: center;
-        border-bottom-left-radius: 5px;
-        border-bottom-right-radius: 5px;
-        }
-
-        .close {
-        color: #ccc;
-        float: right;
-        font-size: 30px;
-        color: #fff;
-        }
-
-        .close:hover,
-        .close:focus {
-        color: #000;
-        text-decoration: none;
-        cursor: pointer;
-        }
-
-        @keyframes modalopen {
-        from {
-            opacity: 0;
-        }
-        to {
-            opacity: 1;
-        }
-        }
-    </style>
 </head>
 <body class="bg-white dark:bg-[#060606]">
     <!-- Navbar -->
@@ -196,25 +120,6 @@
                 </a>
               </div>
         </div>
-
-        <div id="my-modal" class="modal">
-            <div class="modal-content">
-              <div class="modal-header">
-                <span class="close">&times;</span>
-                <h2 class="text-4xl font-bold">Contact Us?</h2>
-              </div>
-              <div class="modal-body pb-5">
-                <div class="w-full px-4 md:w-1/2 lg:w-1/3">
-                    <div class="mb-12">
-                       <label for="" class="mb-[10px] block text-base font-medium text-dark dark:text-white">
-                       Default Input
-                       </label>
-                       <input type="text" placeholder="Default Input" class="w-full bg-transparent rounded-md border border-stroke dark:border-dark-3 py-[10px] px-5 text-dark-6 outline-none transition focus:border-primary active:border-primary disabled:cursor-default disabled:bg-gray-2 disabled:border-gray-2" />
-                    </div>
-                 </div>
-              </div>
-            </div>
-          </div>
 
         <div class="hero-video mt-12 flex items-cente justify-cente">
             <div class="m-6 md:m-16">
@@ -394,7 +299,7 @@
                     <br class="hidden md:block"> visual designs, digital product designs, stationery designs, 
                     <br class="hidden md:block"> prints, clothing etc.).
                 </p>
-                <button id="modal-btn" class="button w-fit flex items-center justify-center space-x-1 rounded-full bg-[#ECBD0B] py-2 md:py-3 px-5 md:px-7 text-sm md:text-base font-medium text-white hover:bg-opacity-90">
+                <a class="w-fit flex items-center justify-center space-x-1 rounded-full bg-[#ECBD0B] py-2 md:py-3 px-5 md:px-7 text-sm md:text-base font-medium text-white hover:bg-opacity-90">
                     <p>
                         Start a Project
                     </p>
@@ -408,7 +313,7 @@
                         </clipPath>
                         </defs>
                     </svg>                    
-                </button>
+                </a>
             </div>
         </div>
 
@@ -789,32 +694,6 @@
 
             element.style.color = "#ECBD0B";
         }
-
-    const modal = document.querySelector('#my-modal');
-    const modalBtn = document.querySelector('#modal-btn');
-    const closeBtn = document.querySelector('.close');
-
-    // Events
-    modalBtn.addEventListener('click', openModal);
-    closeBtn.addEventListener('click', closeModal);
-    window.addEventListener('click', outsideClick);
-
-    // Open
-    function openModal() {
-    modal.style.display = 'block';
-    }
-
-    // Close
-    function closeModal() {
-    modal.style.display = 'none';
-    }
-
-    // Close If Outside Click
-    function outsideClick(e) {
-    if (e.target == modal) {
-        modal.style.display = 'none';
-    }
-    }
     </script>
 </body>
 </html>
