@@ -737,8 +737,8 @@ video {
   margin-top: 2rem;
 }
 
-.mb-16{
-  margin-bottom: 4rem;
+.mb-2{
+  margin-bottom: 0.5rem;
 }
 
 .block{
@@ -945,6 +945,24 @@ video {
   margin-bottom: calc(1.5rem * var(--tw-space-y-reverse));
 }
 
+.space-y-8 > :not([hidden]) ~ :not([hidden]){
+  --tw-space-y-reverse: 0;
+  margin-top: calc(2rem * calc(1 - var(--tw-space-y-reverse)));
+  margin-bottom: calc(2rem * var(--tw-space-y-reverse));
+}
+
+.space-y-10 > :not([hidden]) ~ :not([hidden]){
+  --tw-space-y-reverse: 0;
+  margin-top: calc(2.5rem * calc(1 - var(--tw-space-y-reverse)));
+  margin-bottom: calc(2.5rem * var(--tw-space-y-reverse));
+}
+
+.space-y-14 > :not([hidden]) ~ :not([hidden]){
+  --tw-space-y-reverse: 0;
+  margin-top: calc(3.5rem * calc(1 - var(--tw-space-y-reverse)));
+  margin-bottom: calc(3.5rem * var(--tw-space-y-reverse));
+}
+
 .self-end{
   align-self: flex-end;
 }
@@ -973,20 +991,16 @@ video {
   border-radius: 0.5rem;
 }
 
-.rounded-md{
-  border-radius: 0.375rem;
-}
-
 .border{
   border-width: 1px;
 }
 
-.border-y{
-  border-top-width: 1px;
-  border-bottom-width: 1px;
+.border-2{
+  border-width: 2px;
 }
 
-.border-b{
+.border-y{
+  border-top-width: 1px;
   border-bottom-width: 1px;
 }
 
@@ -1012,6 +1026,11 @@ video {
 .bg-\[\#0D0D0D\]{
   --tw-bg-opacity: 1;
   background-color: rgb(13 13 13 / var(--tw-bg-opacity));
+}
+
+.bg-\[\#121212\]{
+  --tw-bg-opacity: 1;
+  background-color: rgb(18 18 18 / var(--tw-bg-opacity));
 }
 
 .bg-\[\#ECBD0B\]{
@@ -1151,8 +1170,8 @@ video {
   padding-top: 2rem;
 }
 
-.pb-16{
-  padding-bottom: 4rem;
+.pb-2{
+  padding-bottom: 0.5rem;
 }
 
 .text-left{
@@ -1423,80 +1442,14 @@ body::-webkit-scrollbar-thumb{
   transition: color .5s, font-weight .5s;
 }
 
-:root {
-  --modal-duration: 1s;
-  --modal-color: #ECBD0B;
+.placeholder\:text-gray-400::-moz-placeholder{
+  --tw-text-opacity: 1;
+  color: rgb(156 163 175 / var(--tw-text-opacity));
 }
 
-.modal {
-  display: none;
-  position: fixed;
-  z-index: 1;
-  left: 0;
-  top: 0;
-  height: 100%;
-  width: 100%;
-  overflow: auto;
-  background-color: rgba(0, 0, 0, 0.5);
-}
-
-.modal-content {
-  margin: 10% auto;
-  width: 60%;
-  box-shadow: 0 5px 8px 0 rgba(0, 0, 0, 0.2), 0 7px 20px 0 rgba(0, 0, 0, 0.17);
-  animation-name: modalopen;
-  animation-duration: var(--modal-duration);
-}
-
-.modal-header h2,
-.modal-footer h3 {
-  margin: 0;
-}
-
-.modal-header {
-  background: var(--modal-color);
-  padding: 15px;
-  color: #fff;
-  border-top-left-radius: 5px;
-  border-top-right-radius: 5px;
-}
-
-.modal-body {
-  padding: 10px 20px;
-  background: #fff;
-}
-
-.modal-footer {
-  background: var(--modal-color);
-  padding: 10px;
-  color: #fff;
-  text-align: center;
-  border-bottom-left-radius: 5px;
-  border-bottom-right-radius: 5px;
-}
-
-.close {
-  color: #ccc;
-  float: right;
-  font-size: 30px;
-  color: #fff;
-}
-
-.close:hover,
-.close:focus {
-  color: #000;
-  text-decoration: none;
-  cursor: pointer;
-}
-
-@keyframes modalopen {
-  from {
-    opacity: 0;
-  }
-
-  to {
-    opacity: 1;
-  }
+.placeholder\:text-gray-400::placeholder{
+  --tw-text-opacity: 1;
+  color: rgb(156 163 175 / var(--tw-text-opacity));
 }
 
 .hover\:bg-gray-100:hover{
@@ -1519,11 +1472,6 @@ body::-webkit-scrollbar-thumb{
 
 .hover\:opacity-80:hover{
   opacity: 0.8;
-}
-
-.focus\:border-gray-300:focus{
-  --tw-border-opacity: 1;
-  border-color: rgb(209 213 219 / var(--tw-border-opacity));
 }
 
 @media (min-width: 640px){
@@ -1599,6 +1547,10 @@ body::-webkit-scrollbar-thumb{
 
   .md\:mt-6{
     margin-top: 1.5rem;
+  }
+
+  .md\:mt-20{
+    margin-top: 5rem;
   }
 
   .md\:block{
@@ -1875,14 +1827,14 @@ body::-webkit-scrollbar-thumb{
   background-color: #060606ef;
 }
 
-:is(:where(.dark) .dark\:bg-black){
-  --tw-bg-opacity: 1;
-  background-color: rgb(0 0 0 / var(--tw-bg-opacity));
-}
-
 :is(:where(.dark) .dark\:bg-white){
   --tw-bg-opacity: 1;
   background-color: rgb(255 255 255 / var(--tw-bg-opacity));
+}
+
+:is(:where(.dark) .dark\:bg-gray-900){
+  --tw-bg-opacity: 1;
+  background-color: rgb(17 24 39 / var(--tw-bg-opacity));
 }
 
 :is(:where(.dark) .dark\:fill-white){

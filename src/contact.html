@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Honips Digital Hub - Contact</title>
     <link href="/dist/output.css" rel="stylesheet">
+    <link rel="stylesheet" href="test.css">
     <script defer src="/src/js/main.js"></script>
 </head>
 <body class="bg-white dark:bg-[#060606]">
@@ -86,9 +87,9 @@
         </div>
     </header>
 
-    <section class="flex flex-col mt-28 md:mt-40">
-        <div class="m-6 md:m-16 md:px-16 pt-8 md:pt-16">
-            <div class="flex flex-col md:flex-row items-center space-y-4 md:space-y-0">
+    <section class="flex flex-col mt-28 md:mt-20">
+        <div class="m-6 md:m-16 md:px-16 pt-0 md:pt-16">
+            <div class="flex flex-col md:flex-row items-center md:items-start space-y-6 md:space-y-0">
                 <div class="md:w-2/4 content text-center flex flex-col items-center space-y-4 md:text-left md:items-start">
                     <h1 class="text-3xl font-bold leading-tight md:text-6xl dark:text-white">Let's chat.</h1>
                     <h1 class="text-2xl font-bold leading-tight md:text-3xl dark:text-white">Tell us about your project.</h1>
@@ -104,17 +105,17 @@
                               >
                               <path
                                  d="M28 4.7998H3.99998C2.29998 4.7998 0.849976 6.1998 0.849976 7.9498V24.1498C0.849976 25.8498 2.24998 27.2998 3.99998 27.2998H28C29.7 27.2998 31.15 25.8998 31.15 24.1498V7.8998C31.15 6.1998 29.7 4.7998 28 4.7998ZM28 7.0498C28.05 7.0498 28.1 7.0498 28.15 7.0498L16 14.8498L3.84998 7.0498C3.89998 7.0498 3.94998 7.0498 3.99998 7.0498H28ZM28 24.9498H3.99998C3.49998 24.9498 3.09998 24.5498 3.09998 24.0498V9.2498L14.8 16.7498C15.15 16.9998 15.55 17.0998 15.95 17.0998C16.35 17.0998 16.75 16.9998 17.1 16.7498L28.8 9.2498V24.0998C28.9 24.5998 28.5 24.9498 28 24.9498Z"
-                                 fill="currentColor"
+                                 class="fill-black dark:fill-white"
                                  />
                            </svg>
                         </div>
                         <div class="flex flex-col items-start">
-                           <h4 class="mb-1 text-xl font-bold text-dark dark:text-white">
-                              Email Address
+                           <h4 class="mb-1 text-dark dark:text-white text-sm md:text-base">
+                              Send a mail instead!
                            </h4>
-                           <p class="text-base text-body-color dark:text-dark-6">
+                           <a href="mailto:honips0907@gmail.com" class=" text-sm md:text-base text-body-color dark:text-dark-6 dark:text-[#C1C1C1]">
                                 honips0907@gmail.com
-                           </p>
+                           </a>
                         </div>
                     </div>
                 </div>
@@ -122,19 +123,46 @@
                 <div class="w-full md:w-2/4">
                     <form class="w-full">
                         <div class="mb-6">
-                            <input type="text" placeholder="Your Full Name" class="w-full rounded-md p-2 border-stroke dark:border-dark-3 dark:text-dark dark:bg-black text-body-color focus:border-gray-300 border py-3 outline-none"/>
+                            <label for="text" class="text-[#565564] dark:text-[#C1C1C1]">Full Name</label>
+                            <input type="text" placeholder="Your Full Name" class="w-full p-4 mt-2" required/>
                         </div>
                         <div class="mb-6">
+                            <label for="email" class="text-[#565564] dark:text-[#C1C1C1]">Work Email</label>
+                            <input type="email" placeholder="Work Email" class="w-full p-4 mt-2" required/>
+                        </div>
+                        <div class="mb-6">
+                            <label for="text" class="text-[#565564] dark:text-[#C1C1C1]">Business Name</label>
+                            <input type="text" placeholder="Business Name" class="w-full p-4 mt-2" required/>
+                        </div>
+                        <div class="mb-6">
+                            <label for="text" class="text-[#565564] dark:text-[#C1C1C1]">Business Description</label>
+                            <input type="text" placeholder="Business Description" class="w-full p-4 mt-2" required/>
+                        </div>
+                        <div class="mb-6">
+                            <label for="select" class="text-[#565564] dark:text-[#C1C1C1]">Select Service Category</label>
+                            <br>
+                            <select name="category" class="w-full p-4 mt-2">
+                                <option value="">Select Service</option>
+                                <option value="1">Branding</option>
+                                <option value="2">Marketing</option>
+                                <option value="3">Data Acceleration</option>
+                                <option value="4">Data Acceleration</option>
+                                <option value="4">Training</option>
+                                <option value="4">Event Management</option>
+                            </select>
+                        </div>
+                        <div class="mb-6">
+                            <label for="text" class="text-[#565564] dark:text-[#C1C1C1]">Message</label>
                             <textarea
                                 rows="6"
-                                placeholder="Your Message"
-                                class="p-2 border-stroke border-black dark:border-dark-3 dark:text-dark-6 dark:bg-dark text-body-color focus:border-primary w-full resize-none rounded border py-3 px-[14px] text-base outline-none"
+                                placeholder="Type in your Message"
+                                class="p-4 w-full mt-2"
                                 ></textarea>
                         </div>
                         <div>
                             <button
                                 type="submit"
-                                class="rounded-2xl py-3 px-7 text-base font-medium text-white hover:bg-opacity-90 w-full p-3 transition border border-primary bg-[#ECBD0B]"
+                                class="rounded-full py-3 px-7 text-base font-medium text-white hover:bg-opacity-90 w-full p-3 transition border border-primary bg-[#ECBD0B]"
                                 >
                             Send Message
                             </button>
@@ -146,9 +174,8 @@
     </section>
 
     <!-- Footer -->
-    <section class="pb-24 bg-[#FFFEF7] text-center text-[#00000] dark:bg-[#010001] dark:text-[#C1C1C1]">
+    <section class="pt-12 pb-24 bg-[#FFFEF7] text-center text-[#00000] dark:bg-[#010001] dark:text-[#C1C1C1]">
         <div class="flex flex-col items-center justify-center">
-            <!-- <img src="/src/assets/Logo.svg" class="w-2/4 md:w-1/4"> -->
             <div class="">
                 <svg width="146" height="48" viewBox="0 0 146 48" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <g clip-path="url(#clip0_783_5528)">
