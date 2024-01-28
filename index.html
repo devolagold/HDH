@@ -5,9 +5,34 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Honips Digital Hub</title>
-    <link href="/dist/output.css" rel="stylesheet">
     <script defer src="/src/js/main.js"></script>
-    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="/dist/output.css" rel="stylesheet">
+    <style>
+        @media (min-width: 768px) {
+            .video{
+                width: 600px;
+                border-radius: 10px;
+                border: 1px solid #00000054 !important;
+            }
+            .video video{
+                border-radius: 6px;
+            }
+            .playpause{
+                background-image: url(src/assets/play.png);
+                background-repeat: no-repeat;
+                width: 20%;
+                height: 20%;
+                position: absolute;
+                left: 0%;
+                right: 0%;
+                top: 0%;
+                bottom: 0%;
+                margin: auto;
+                background-size: contain;
+                background-position: center;
+            }
+        }
+    </style>
 </head>
 <body class="bg-white dark:bg-[#060606]">
     <!-- Navbar -->
@@ -42,7 +67,7 @@
                 <nav x-transition :class="!navbarOpen && 'hidden'" id="navbarCollapse" class="absolute right-4 top-full w-full max-w-[250px] rounded-lg bg-white py-5 px-6 transition-all lg:static lg:block lg:w-full lg:max-w-full lg:shadow-none dark:bg-[#060606ef]">
                   <ul class="block lg:flex">
                     <li>
-                      <a href="#services" class="flex py-2 text-base text-[#565564] hover:text-[#ECBD0B] hover:font-bold lg:ml-12 lg:inline-flex dark:text-[#C1C1C1]">Services</a>
+                      <a href="#services" class="flex py-2 text-base text-[#565564] hover:text-[#ECBD0B] lg:ml-12 lg:inline-flex dark:text-[#C1C1C1]">Services</a>
                     </li>
                     <li>
                       <a href="co-working.html" class="flex py-2 text-base text-[#565564] font-extrabold hover:text-[#ECBD0B] lg:ml-12 lg:inline-flex dark:text-[#C1C1C1]">Coworking Space</a>
@@ -123,14 +148,10 @@
         </div>
 
         <div class="hero-video flex items-center justify-center">
-            <!-- <div class="wrapper cqt-hire-steps-img-play">
-                <video class="video">
-                    <source src="/src/assets/HDH model 2.mp4" type="video/mp4">
-                </video>
-                <div class="playpause" style="display: block;"></div>
-            </div> -->
-            <div class="m-6 md:m-16">
-                <video src="/src/assets/HDH model 2.mp4" controls loop></video>
+            <div class="m-6 md:m-16 md:w-[600px] md:h-[600px] video relative">
+                <video id="myVideo" src="/src/assets/HDH model 2.mp4" onplay="hideButton()" onpause="showButton()" controls></video>
+                <!-- <video src="/src/assets/HDH model 2.mp4" controls loop id="myVideo" onplay="hideButton()" onpause="showButton()"></video> -->
+                <div class="playpause overlay-button" onclick="togglePlayPause()"></div>
             </div>
         </div>
     </section>
@@ -681,6 +702,7 @@
         </div>
     </section>
 
+    <!-- <script src="https://cdn.tailwindcss.com"></script> -->
     <script src="src/js/dark-mode.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.4/gsap.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.4/ScrollTrigger.min.js"></script>
@@ -688,6 +710,25 @@
     <script src="https://unpkg.com/@studio-freight/lenis@1.0.32/dist/lenis.min.js"></script> 
 
     <script>
+        function togglePlayPause() {
+        var video = document.getElementById("myVideo");
+        if (video.paused) {
+            video.play();
+        } else {
+            video.pause();
+        }
+        }
+
+        function hideButton() {
+        var button = document.querySelector('.overlay-button');
+        button.style.display = 'none';
+        }
+
+        function showButton() {
+        var button = document.querySelector('.overlay-button');
+        button.style.display = 'block';
+        }
+
         setInterval(function(){
             if(document.activeElement instanceof HTMLIFrameElement){
                 document.getElementById('cover').style.opacity=0;
