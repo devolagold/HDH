@@ -121,43 +121,44 @@
                 </div>
     
                 <div class="w-full md:w-2/4">
-                    <form class="w-full">
+                    <form class="w-full" id="inputForm">
                         <div class="mb-6">
                             <label for="text" class="text-[#565564] dark:text-[#C1C1C1]">Full Name</label>
-                            <input type="text" placeholder="Your Full Name" class="w-full p-4 mt-2" required/>
+                            <input name="full_name" type="text" placeholder="Your Full Name" class="w-full p-4 mt-2" required/>
                         </div>
                         <div class="mb-6">
                             <label for="email" class="text-[#565564] dark:text-[#C1C1C1]">Work Email</label>
-                            <input type="email" placeholder="Work Email" class="w-full p-4 mt-2" required/>
+                            <input name="work_email" type="email" placeholder="Work Email" class="w-full p-4 mt-2" required/>
                         </div>
                         <div class="mb-6">
                             <label for="text" class="text-[#565564] dark:text-[#C1C1C1]">Business Name</label>
-                            <input type="text" placeholder="Business Name" class="w-full p-4 mt-2" required/>
+                            <input name="business_name" type="text" placeholder="Business Name" class="w-full p-4 mt-2" required/>
                         </div>
                         <div class="mb-6">
                             <label for="text" class="text-[#565564] dark:text-[#C1C1C1]">Business Description</label>
-                            <input type="text" placeholder="Business Description" class="w-full p-4 mt-2" required/>
+                            <input name="business_description" type="text" placeholder="Business Description" class="w-full p-4 mt-2" required/>
                         </div>
                         <div class="mb-6">
                             <label for="select" class="text-[#565564] dark:text-[#C1C1C1]">Select Service Category</label>
                             <br>
-                            <select name="category" class="w-full p-4 mt-2">
+                            <select name="Select_Service_Category" class="w-full p-4 mt-2">
                                 <option value="">Select Service</option>
-                                <option value="1">Branding</option>
-                                <option value="2">Marketing</option>
-                                <option value="3">Workspace</option>
-                                <option value="4">Data Acceleration</option>
-                                <option value="5">Training</option>
-                                <option value="6">Event Management</option>
+                                <option  value="Branding">Branding</option>
+                                <option value="Marketing">Marketing</option>
+                                <option value="Workspace">Workspace</option>
+                                <option value="Data Acceleration">Data Acceleration</option>
+                                <option value="Training">Training</option>
+                                <option value="Event Management">Event Management</option>
                             </select>
                         </div>
                         <div class="mb-6">
                             <label for="file" class="text-[#565564] dark:text-[#C1C1C1]">Attach a file (if any)</label>
-                            <input type="file" placeholder="Business Description" class="w-full p-4 mt-2"/>
+                            <input name="file" type="file" placeholder="Business Description" class="w-full p-4 mt-2"/>
                         </div>
                         <div class="mb-6">
                             <label for="text" class="text-[#565564] dark:text-[#C1C1C1]">Message (Optional)</label>
                             <textarea
+                            name="message"
                                 rows="6"
                                 placeholder="Type in your Message"
                                 class="p-4 w-full mt-2"
@@ -165,7 +166,7 @@
                         </div>
                         <div>
                             <button
-                                type="submit"
+                                type="submit" 
                                 class="rounded-full py-3 px-7 text-base font-medium text-white hover:bg-opacity-90 w-full p-3 transition border border-primary bg-[#ECBD0B]"
                                 >
                             Send Message
@@ -276,6 +277,10 @@
         })
 
         setTimeout(startAnimation, 500);
+    </script>
+
+    <script src="./contactApi.js">
+
     </script>
 </body>
 </html>

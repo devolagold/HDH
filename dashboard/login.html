@@ -19,24 +19,29 @@
                     <h1 class="text-xl text-center font-semibold md:text-2xl text-white">
                         Sign in to Admin Dashboard
                     </h1>
+<<<<<<< HEAD
                     <form class="flex flex-col space-y-4 md:space-y-6" action="#">
                         <!-- Remove hidden class to show messages -->
                         <label class="hidden text-base text-center text-green-600">Success! Login details are correct!</label>
                         <label class="hidden text-base text-center text-red-600">Failed! Login details are incorrect!</label>
+=======
+                    <form class="flex flex-col space-y-4 md:space-y-6"  id="loginForm">
+>>>>>>> 9b0d5b2d45316a1f126ab38746236a28ed5757f3
                         <div>
                             <label for="email" class="block mb-2 text-base font-medium text-white">Admin email</label>
-                            <input type="email" name="email" id="email" class="bg-transparent border border-[#ecbb0b] text-white rounded-lg block w-full p-3" placeholder="Enter email" required>
+                            <input type="email" name="email" id="email"  class="bg-transparent border border-[#ecbb0b] text-white rounded-lg block w-full p-3" placeholder="Enter email" required>
                         </div>
                         <div>
-                            <label for="password" class="block mb-2 text-base font-medium text-white">Password</label>
-                            <input type="password" name="password" id="password" placeholder="••••••••" class="bg-transparent border border-[#ecbb0b] text-white rounded-lg block w-full p-3" required>
+                            <label for="password" class="block mb-2 text-base font-medium text-white">password</label>
+                            <input type="password" name="password" id="password"  placeholder="••••••••" class="bg-transparent border border-[#ecbb0b] text-white rounded-lg block w-full p-3" required>
                         </div>
-                        <a href="dashboard.html" type="submit" class="w-full text-black bg-[#ECBD0B] hover:opacity-90 font-medium rounded-lg text-base px-5 py-2.5 text-center">Sign in</a>
+                        <button  type="submit" class="w-full text-black bg-[#ECBD0B] hover:opacity-90 font-medium rounded-lg text-base px-5 py-2.5 text-center">Sign in</button>
                     </form>
                 </div>
             </div>
         </div>
       </section>
   </div>
+  <script src="./login.js"></script>
 </body>
 </html>
