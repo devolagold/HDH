@@ -7,6 +7,7 @@
     <title>Honips Digital Hub</title>
     <link href="/dist/output.css" rel="stylesheet">
     <script defer src="/src/js/main.js"></script>
+    <script src="https://cdn.tailwindcss.com"></script>
 </head>
 <body class="bg-white dark:bg-[#060606]">
     <!-- Navbar -->
@@ -535,23 +536,23 @@
             </div>
             <div class="input flex flex-col space-y-4">
                 <input type="text" placeholder="Your Email" class="rounded-none w-full py-3 px-3 mt-2" required/>
-                <div class="flex space-x-3 justify-center md:justify-between">
+                <div class="flex space-x-3 justify-center md:justify-between px-2">
                     <div class="flex items-center space-x-1 me-4">
                         <input id="tech" type="checkbox" class="w-4 h-4 text-blue-600 bg-gray-100 border-gray-300 ">
-                        <label for="tech" class="text-base font-medium text-gray-900 dark:text-gray-300">Tech</label>
+                        <label for="tech" class="text-base font-medium text-gray-900">Tech</label>
                     </div>
 
                     <div class="flex items-center space-x-1 me-4">
-                        <input id="design" type="checkbox" class="w-4 h-4 text-blue-600 bg-gray-100 border-gray-300 ">
-                        <label for="design" class="text-base font-medium text-gray-900 dark:text-gray-300">Design</label>
+                        <input id="design" type="checkbox" class="w-4 h-4 text-blue-600 bg-gray-100 border-gray-300">
+                        <label for="design" class="text-base font-medium text-gray-900">Design</label>
                     </div>
 
                     <div class="flex items-center space-x-1 me-4">
                         <input id="ai" type="checkbox" class="w-4 h-4 text-blue-600 bg-gray-100 border-gray-300 ">
-                        <label for="ai" class="text-base font-medium text-gray-900 dark:text-gray-300">AI</label>
+                        <label for="ai" class="text-base font-medium text-gray-900">AI</label>
                     </div>
                 </div>
-                <button type="submit" class="rounded-none py-3 px-7 text-base font-medium text-white hover:bg-opacity-90 w-full p-3 transition border border-primary bg-black">
+                <button type="submit" class="rounded-none py-3 px-16 text-base font-medium text-white hover:bg-opacity-90 w-full p-3 bg-black">
                     Subcribe to awakening
                 </button>
             </div>
