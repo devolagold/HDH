@@ -1,4 +1,6 @@
 const form=document.getElementById("loginForm");
+const fetchData= document.querySelector('.new');
+let output='';
 form.addEventListener("submit",function(e){
     e.preventDefault();
 
@@ -14,11 +16,18 @@ form.addEventListener("submit",function(e){
   }).then(res=>res.json())
   .then(data=>{
     if(data.message=='login succesful'){
+      console.log(data.message)
     window.location.assign('dashboard.html')
-    alert(`${data.message}`)
+    
   
+    
+output=`
+<label class="text-base text-center text-green-600">${data.message}</label>
+`
+   fetchData.innerHTML=output;
     }else{
-        alert(`${data.message}`)
+      output=`<label class="text-base text-center text-red-600">${data.message}</label>`; fetchData.innerHTML=output;
+      
         return;
     } })
   .catch(err=>console.log(err))

@@ -555,28 +555,28 @@
             <div class="content flex items-start">
                 <h1 class="text-2xl md:text-6xl font-semibold text-center md:text-left">Get update on emerging<br class="hidden md:block"> tech newsletter in <br class="hidden md:block">your inbox.</h1>
             </div>
-            <div class="input flex flex-col space-y-4">
-                <input type="text" placeholder="Your Email" class="rounded-none w-full py-3 px-3 mt-2" required/>
+            <form class="input flex flex-col space-y-4">
+                <input type="text" name="email" placeholder="Your Email" class="rounded-none w-full py-3 px-3 mt-2" required/>
                 <div class="flex space-x-3 justify-center md:justify-between px-2">
                     <div class="flex items-center space-x-1 me-4">
-                        <input id="tech" type="checkbox" class="w-4 h-4 text-blue-600 bg-gray-100 border-gray-300 ">
+                        <input id="tech" value="Tech" name="Tech" type="checkbox" class="w-4 h-4 text-blue-600 bg-gray-100 border-gray-300 ">
                         <label for="tech" class="text-base font-medium text-gray-900">Tech</label>
                     </div>
 
                     <div class="flex items-center space-x-1 me-4">
-                        <input id="design" type="checkbox" class="w-4 h-4 text-blue-600 bg-gray-100 border-gray-300">
+                        <input id="design" value="Design" name="Design" type="checkbox" class="w-4 h-4 text-blue-600 bg-gray-100 border-gray-300">
                         <label for="design" class="text-base font-medium text-gray-900">Design</label>
                     </div>
 
                     <div class="flex items-center space-x-1 me-4">
-                        <input id="ai" type="checkbox" class="w-4 h-4 text-blue-600 bg-gray-100 border-gray-300 ">
-                        <label for="ai" class="text-base font-medium text-gray-900">AI</label>
+                        <input id="ai" value="Ai" name="Ai" type="checkbox" class="w-4 h-4 text-blue-600 bg-gray-100 border-gray-300 ">
+                        <label for="ai"  class="text-base font-medium text-gray-900">AI</label>
                     </div>
                 </div>
                 <button type="submit" class="rounded-none py-3 px-16 text-base font-medium text-white hover:bg-opacity-90 w-full p-3 bg-black">
                     Subcribe to awakening
                 </button>
-            </div>
+            </form>
         </div>
     </section>
 
@@ -708,6 +708,7 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.4/ScrollTrigger.min.js"></script>
     <script src="https://unpkg.com/split-type"></script>
     <script src="https://unpkg.com/@studio-freight/lenis@1.0.32/dist/lenis.min.js"></script> 
+    <script src="index.js"></script> 
 
     <script>
         function togglePlayPause() {

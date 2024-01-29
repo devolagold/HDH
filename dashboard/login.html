@@ -21,8 +21,10 @@
                     </h1>
                     <form class="flex flex-col space-y-4 md:space-y-6"  id="loginForm">
                          <!-- Remove hidden class to show messages -->
-                         <label class="hidden text-base text-center text-green-600">Success! Login details are correct!</label>
-                         <label class="hidden text-base text-center text-red-600">Failed! Login details are incorrect!</label>
+                        <div class="new">
+                             <label class="text-base text-center text-green-600"></label>
+                         <label class="text-base text-center text-red-600"></label>
+                        </div>
                         <div>
                             <label for="email" class="block mb-2 text-base font-medium text-white">Admin email</label>
                             <input type="email" name="email" id="email"  class="bg-transparent border border-[#ecbb0b] text-white rounded-lg block w-full p-3" placeholder="Enter email" required>
