@@ -3,7 +3,7 @@ form.addEventListener("submit",function(e){
     e.preventDefault();
 
   const paylode=  new FormData(form);
-  console.log([...paylode])
+ 
   fetch('https://honips-digital-hub-api.onrender.com/contact/register',{
     method:"POST",
     body:paylode,

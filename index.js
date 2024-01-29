@@ -15,7 +15,7 @@ const body={
   "email":email,
   "service":skill.toString()
 }
-console.log(body)
+
 
 fetch('https://honips-digital-hub-api.onrender.com/contact/news-letter-subcription',{
     method:"POST",

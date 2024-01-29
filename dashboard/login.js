@@ -6,7 +6,7 @@ form.addEventListener("submit",function(e){
 
   const paylode=  new FormData(form);
   const fin=Object.fromEntries(paylode)
-  console.log([fin,])
+
   fetch('https://honips-digital-hub-api.onrender.com/contact/login',{
     method:"POST",
     headers:{
@@ -16,7 +16,7 @@ form.addEventListener("submit",function(e){
   }).then(res=>res.json())
   .then(data=>{
     if(data.message=='login succesful'){
-      console.log(data.message)
+  
     window.location.assign('dashboard.html')
     
   
