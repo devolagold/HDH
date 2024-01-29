@@ -7,7 +7,7 @@ fetch(url)
 .then(res=>res.json())
 .then(data =>{
     data.data.forEach(element => {
-        console.log(element._id)
+      
         output+=`
         
         <tr class="bg-[#121212] border-b dark:border-gray-700">
